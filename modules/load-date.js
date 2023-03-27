@@ -1,4 +1,4 @@
-import {DateTime} from './luxon-mini.js';
+import { DateTime } from './luxon-mini.js';
 
 const loadDate = () => {
   const dateContainer = document.querySelector('.date-container');
