@@ -5,7 +5,7 @@ class BookList {
     this.bookNameInput = document.querySelector('#book-name');
     this.bookAuthorInput = document.querySelector('#book-author');
     this.addButton = document.querySelector('#add_book');
-    this.booksContainer = document.querySelector('#books-container');
+    this.booksContainer = document.querySelector('#books_section');
     this.bookForm = document.querySelector('.book-form');
     this.localData = localStorage.getItem('books');
 
