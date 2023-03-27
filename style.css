@@ -22,12 +22,12 @@
   display: flex;
   align-items: center;
   list-style: none;
+  gap: 8px;
 }
 
 .menu-item {
   cursor: pointer;
-  padding: 5px;
-  text-align: center;
+  padding: 3px;
 }
 
 .main_container {
