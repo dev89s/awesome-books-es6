@@ -31,6 +31,6 @@ const initializePage = () => {
   const dateContainer = document.querySelector('.date-container');
   dateContainer.innerHTML = new Date().toString().slice(0, 34);
   bookObj.loadBooks();
-}
+};
 
-export default initializePage
+export default initializePage;
