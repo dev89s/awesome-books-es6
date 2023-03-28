@@ -1,34 +1,25 @@
 import BookList from './book-list.js';
+import loadPage from './load-page.js';
 
 const initializePage = () => {
   const bookObj = new BookList();
-  const formContainer = document.querySelector('.book-form');
-  const bookListSection = document.querySelector('.book-list-section');
-  const contactSection = document.querySelector('.contact-section');
+  bookObj.loadBooks();
 
-  const listLink = document.querySelector('#menu-list-btn');
-  const AddNewLink = document.querySelector('#menu-add-btn');
-  const contactLink = document.querySelector('#menu-contact-btn');
+  const listLink = document.querySelector('#menu-list-link');
+  const AddNewLink = document.querySelector('#menu-add-link');
+  const contactLink = document.querySelector('#menu-contact-link');
 
   listLink.addEventListener('click', () => {
-    bookListSection.style.display = 'block';
-    formContainer.style.display = 'none';
-    contactSection.style.display = 'none';
+    loadPage('list-view');
   });
 
   AddNewLink.addEventListener('click', () => {
-    bookListSection.style.display = 'none';
-    formContainer.style.display = 'flex';
-    contactSection.style.display = 'none';
+    loadPage('add-view');
   });
 
   contactLink.addEventListener('click', () => {
-    bookListSection.style.display = 'none';
-    contactSection.style.display = 'flex';
-    formContainer.style.display = 'none';
+    loadPage('contact-view');
   });
-
-  bookObj.loadBooks();
 };
 
 export default initializePage;

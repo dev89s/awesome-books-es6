@@ -1,3 +1,5 @@
+import loadPage from './load-page.js';
+
 class BookList {
   bookList = [];
 
@@ -16,6 +18,7 @@ class BookList {
     this.addButton.addEventListener('click', () => {
       this.addBook(this.bookNameInput.value, this.bookAuthorInput.value);
       this.bookForm.reset();
+      loadPage('list-view');
     });
   }
 

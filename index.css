@@ -102,10 +102,13 @@
 
 .input_item {
   width: 100%;
+  margin: 15px 0;
 }
 
 #add_book {
   align-self: flex-end;
+  padding: 2px 5px;
+  margin-top: 10px;
 }
 
 /* ---- Contact Section ---- */
