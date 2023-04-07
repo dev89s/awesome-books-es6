@@ -75,7 +75,7 @@
 
 ## 🚀 Live Demo <a id="live-demo"></a>
 
-- An implementation of this portfolio is live on Github Pages(hhttps://dev89s.github.io/awesome-books-es6/)
+- An implementation of this portfolio is live on [Github Pages](hhttps://dev89s.github.io/awesome-books-es6/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
